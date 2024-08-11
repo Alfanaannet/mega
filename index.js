@@ -17,6 +17,9 @@ app.get('/callback', async (req, res) => {
     }
 });
 
+app.get('/ping', async (req, res) => {
+    res.status(200).send('Pong');
+});
 app.listen(port, () => {
     console.log(`Server is running on`);
 });
